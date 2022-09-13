@@ -59,6 +59,11 @@ text-decoration:none;
 nav ul{
 list-style-type:none;
 }
+table{
+margin:0 auto; 
+width:50%
+}
+
 </style>
 
 </head>

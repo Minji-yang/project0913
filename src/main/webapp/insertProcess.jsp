@@ -24,9 +24,12 @@ request.setCharacterEncoding("UTF-8");      //줘라 set utf8 파일인코딩- �
     	   pstmt.setString(3,name);
 	    	pstmt.executeUpdate();                         //데이터베이스에 반영시키기
 	    	System.out.println("저장성공");
+	    	
 	    	   %>              
 	    	   <script>
-	    	   alert ("저장성공")</script>
+	    	   alert ("저장성공")
+	    	   location.href="select.jsp";              //저장과 동시에 조회되는 것
+	    	   </script>   
 	    <%    } catch(Exception e){ System.out.println("저장 실패"); 
 	    e.printStackTrace();}
 	    %>
